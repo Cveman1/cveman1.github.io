@@ -527,6 +527,12 @@ div svg {
     gap: 85px;
 }
 
+.store {
+    height: 648px;
+    align-self: stretch;
+    flex: 1 0 0;
+}
+
 .sme-grid .feature {
     padding-top: 100px;
 }
