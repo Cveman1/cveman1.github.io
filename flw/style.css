@@ -1,0 +1,541 @@
+/* I am replicating flw, to learn to code */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+@font-face {
+    font-family: Milik;
+    src: url(../fonts/Milik/Millik.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Moderat regular */
+@font-face {
+    font-family: Moderat;
+    src: url(../fonts/Moderat/Moderat-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Moderat light */
+@font-face {
+    font-family: Moderat;
+    src: url(../fonts/Moderat/Moderat-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/* Moderat medium */
+@font-face {
+    font-family: Moderat;
+    src: url(../fonts/Moderat/Moderat-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Moderat bold */
+@font-face {
+    font-family: Moderat;
+    src: url(../fonts/Moderat/Moderat-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Moderat black */
+@font-face {
+    font-family: Moderat;
+    src: url(../fonts/Moderat/Moderat-Black.ttf) format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Moderat, sans-serif;
+    font-style: normal;
+    color: #1D1D1D;
+}
+
+.wrapper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* check  border: solid 1px red; */
+
+/* Nav menu */
+
+/*
+
+section {
+    width: 1092px;
+    max-width: 1092px;
+    margin: 0 15%;
+}
+
+*/
+
+nav {
+    flex-direction: row;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0;
+    align-items: center;
+}
+
+.navMenu{
+    display: flex;
+    max-width: 811px;
+    align-items: center;
+}
+
+.navMenu li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 12px 10px 12px;
+    align-items: flex-start;
+    color: #262C55;
+    font-family: Moderat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; 
+}
+
+.flwLogo {
+    flex-shrink: 0;
+    width: 185px;
+    height: 44px;
+}
+
+.rightNav {
+    display: flex;
+    width: 185px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.navButton {
+    display: flex;
+    padding: 15px 50px 15px 50px;
+    border-radius: 10px;
+    background: #EEE;  
+    border: none; 
+    color: #262C55;
+    font-family: Moderat;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; 
+    }
+
+/* Hero section */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    width: 1092px;
+    max-width: 1092px;
+    margin: 15%;
+    padding: 0px;
+    flex-shrink: 0;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+h1, h2 {
+    font-family: Milik;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    color: #1D1D1D;
+    font-family: Moderat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.heroContent {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: start;
+    width: 750px;
+    padding: 0px 68px 0.5px 0px;
+}
+
+.heroText {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 100px;
+    line-height: 108px;
+    letter-spacing: -2px;
+    color: #fb9129;
+}
+
+.heroText span {
+    color: #000;
+}
+
+.heroBody {
+    color: #000;
+    font-family: Moderat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: 32px;
+    display: flex;
+    width: 610px;
+    max-width: 610px;
+    padding: 0px 36px 40px 0px;
+    align-items: flex-start;
+    margin: 0;
+}
+
+.buttonWrapper {
+    display: flex;
+    padding-right: 0px;
+    align-items: center;
+    gap: 20px;
+    font-family: Moderat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: center;
+}
+
+Button {
+    display: flex;
+    padding: 21px 25px 21px 25px;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background: #0A0E27;    
+    color: #FFF;
+}
+
+.secondaryButton {
+    display: flex;
+    align-items: center;
+    padding: 21px 24px 21px 24px;
+    border-radius: 10px;
+    background: #EEE;  
+    border: none; 
+    color: #000; 
+}
+
+.tertiaryButton {
+    display: inline-flex;
+    padding: 4px 0 5px;
+    color: #FB4E20;
+    text-align: center;
+    font-family: Moderat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    background: none;
+}
+
+/* 2nd section */
+
+.secondSection {
+    display: flex;
+    width: 1920px;
+    padding: 0px 80px 120px;
+    margin: 0;
+}
+
+.secondSectionContainer {
+    display: flex;
+    align-items: flex-start;
+    gap: 216px;
+}
+
+.Famasi {
+    display: flex;
+    margin: -200px;
+    flex-direction: column;
+    gap: 74px;
+}
+
+.Famasi figure {
+    width: 673.09px;
+    height: 672px;
+    margin: 0;
+}
+
+figcaption {
+    color: #fff;
+    font-family: Moderat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 29px; 
+
+    margin: -56px 32px;
+}
+
+figcaption.Foot {
+    text-align: right;
+    margin: -56px 32px;
+}
+
+.Famasi p {
+    display: flex;
+    width: 360px;
+    max-width: 360px;
+    padding-right: 22px;
+    align-items: flex-start;
+    color: #1D1D1D;
+    font-family: Moderat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 0 0;
+}
+
+h5 {
+    font-family: Moderat;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 32px;
+}
+
+strong {
+    font-family: Moderat;
+    font-weight: 700;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+/* for Enterprises */
+
+h2 {
+    font-size: 80px;
+}
+
+.sections {
+    margin: 160px 0;
+    border: solid 1px red;
+}
+
+.secondHeader {
+    color: #1D1D1D;
+    font-size: 80px;
+    line-height: 86px;
+    letter-spacing: -2px;
+    max-width: 650px;
+}
+
+.secondHeader span {
+    color: #FB9129;
+}
+
+.enterprise-features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+h4 {
+    color: #050505;
+    font-family: Moderat;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 0;
+}
+
+.feature p {
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+.featureButton {
+    padding: 15px 24px 15px 24px;
+}
+
+.featureImage {
+    display: flex;
+    width: 320px;
+    max-width: 320px;
+    padding-bottom: 0px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.feature-grid {
+    display: flex;
+    flex-direction: column;
+    width: 323.98px;
+    align-items: flex-start;
+    gap: 100px;
+    flex-shrink: 0;
+}
+
+.featureSecondaryButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 8px;
+    margin: 0;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    padding-top: 0px;
+}
+div svg {
+    display: block;
+    width: 8.5px;
+    height: 12.75px;
+    padding: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+/* for SMEs */
+
+.sectionbg {
+    background: #F8FAFD;
+}
+
+.thirdHeader {
+    color: #1D1D1D;
+    font-size: 80px;
+    line-height: 86px;
+    letter-spacing: -2px;
+}
+
+.thirdHeader span {
+    color: #35A162;
+}
+
+.sme {
+    display: flex;
+    flex-direction: column;
+    gap: -87.5px;
+    align-items: flex-start;
+}
+
+.sme-grid {
+    display: flex;
+    width: 1092px;
+    padding-left: 0px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 85px;
+}
+
+.sme-grid .feature {
+    padding-top: 100px;
+}
+
+.sme-grid .feature p {
+    width: 350px;
+}
+
+.Yanga {
+    display: flex;
+    width: 556.91px;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+
+.Yanga figure {
+    display: flex;
+    width: 20px;
+    align-items: flex-start;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.feature-grid .feature p {
+    width: 345px;
+}
+
+
+.creator figcaption {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.creator {
+    margin-bottom: -25px;
+}
+
+.creator figure figcaption {
+    color: #1D1D1D;
+    text-align: center;
+    font-size: 16px;
+}
+
+.creator figure figcaption span {
+    color: #35A162;
+    padding-left: 5px;
+}
+
+.flex-end {
+    align-items: flex-end;
+    margin-top: -120px;
+    margin-left: 30px;
+}
+
+.sme-grid .feature-grid .feature {
+    padding: 0;
+}
+
+.grid {
+    
+}
