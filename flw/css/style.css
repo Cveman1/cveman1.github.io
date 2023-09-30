@@ -554,6 +554,9 @@ div.yanga-content .featureButton {
 .yanga-image {
     width: 556px;
     height: 648px;
+    flex-shrink: 0;
+    background-image: url(/img/yanga-beauty.png);
+    background-size: cover;
 }
 
 .sme-grid .feature {
