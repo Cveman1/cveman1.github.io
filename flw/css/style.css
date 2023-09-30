@@ -529,8 +529,6 @@ div svg {
 
 .store {
     height: 648px;
-    align-self: stretch;
-    flex: 1 0 0;
 }
 
 .sme-grid .feature {
