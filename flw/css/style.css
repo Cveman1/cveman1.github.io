@@ -59,6 +59,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     font-family: Moderat, sans-serif;
     font-style: normal;
     color: #1D1D1D;
