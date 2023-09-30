@@ -514,7 +514,7 @@ div svg {
 .sme {
     display: flex;
     flex-direction: column;
-    gap: -87.5px;
+    /* gap: -87.5px; */
     align-items: flex-start;
 }
 
@@ -527,11 +527,31 @@ div svg {
     gap: 85px;
 }
 
-.yanga-store {
-
+div.yanga-store {
+    display: flex;
+    width: 1092px;
+    gap: 85px;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
-.store {
+.yanga-content {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0 0 100px;
+    width: 500px;
+    height: 224px;
+}
+
+div.yanga-content .featureButton {
+    display: flex;
+    padding: 15px 28px 15px 28px;
+    justify-content: center;
+    width: 150px;
+}
+
+.yanga-image {
+    width: 556px;
     height: 648px;
 }
 
@@ -541,21 +561,6 @@ div svg {
 
 .sme-grid .feature p {
     width: 350px;
-}
-
-.Yanga {
-    display: flex;
-    width: 556.91px;
-    align-items: flex-start;
-    flex-shrink: 0;
-}
-
-.Yanga figure {
-    display: flex;
-    width: 20px;
-    align-items: flex-start;
-    flex-shrink: 0;
-    object-fit: cover;
 }
 
 .feature-grid .feature p {
@@ -588,7 +593,6 @@ div svg {
 .flex-end {
     align-items: flex-end;
     margin-top: -120px;
-    margin-left: 30px;
 }
 
 .sme-grid .feature-grid .feature {
