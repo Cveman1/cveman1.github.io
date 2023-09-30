@@ -1064,6 +1064,10 @@ h6 {
     border-bottom: 1px solid #F3F3F3;
 }
 
+.empty-class {
+    display: flex;
+}
+
 .footer-left {
     display: flex;
     align-items: center;
@@ -1100,5 +1104,6 @@ h6 {
     display: flex;
     gap: 24px
 }
+
 
 /* end */
