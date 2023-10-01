@@ -555,7 +555,7 @@ div.yanga-content .featureButton {
     width: 556px;
     height: 648px;
     flex-shrink: 0;
-    background-image: url(/img/yanga-beauty.png);
+    background-image: url(img/yanga-beauty.png);
     background-size: cover;
 }
 
@@ -843,7 +843,7 @@ div .large-button {
     top: 1px;
     width: 1px;
     height: 550.73px;
-    background: url(/img/pseudo.png);
+    background: url(img/pseudo.png);
 }
 
 .global-feature {
