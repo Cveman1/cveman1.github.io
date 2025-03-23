@@ -1,10 +1,13 @@
 !hola!
 
-I began my learning journey into UI development a while back, starting with HTML and CSS. 
+I'm on a journey to become a skilled UI Design Engineer.
 
-For practice, here's my first website clone. Replication of Flutterwave's homepage with only HTML and CSS.
+For now, I'd be documenting my projects here.
 
-View here:[https://cveman1.github.io/flw]([url](https://cveman1.github.io/flw/))
+1. Flutterwave's Homepage Replica
+   My first practice with HTML and CSS was replicating the homepage of Flutterwave's website.
+   View here: [cveman1.github.io/flw](cveman1.github.io/flw)
+   Original: https://flutterwave.com/ng
 
-The Original: https://flutterwave.com/ng
-
+2. Password Generator
+   Still working on the link
