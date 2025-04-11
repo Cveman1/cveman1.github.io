@@ -1,0 +1,119 @@
+body {
+    margin: auto;
+    background: #ECFDF5;
+    font-family: Karla;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin: 10%;
+   
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.title {
+    color: #2B283A;
+    font-family: Karla;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px; /* 100% */
+    letter-spacing: -2px;
+    
+    margin: 0;
+}
+
+.title span {
+    color: #10B981;
+    /* layout */
+    width: 354px;
+    
+}
+
+.header p {
+    color: #6B7280;
+    
+    /* typography */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 140% */
+    
+    /* layout */
+    margin: 0;
+}
+
+.outputs {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.generate-password {
+    
+    /* layout */
+    width: max-content;
+    display: inline-flex;
+    padding: 9px 17px 9px 15px;
+    justify-content: center;
+    align-items: center;
+    
+    
+    /* style */
+    border-radius: 6px;
+    border: none;
+    background: #10B981;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    
+    /* typography */
+    color: var(--white, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    
+}
+
+hr {
+    border: none;
+    background-color: hsla(255, 5%, 84%, 1);
+    width: 100%;
+    height: 1px;
+}
+
+.passwords {
+    display: flex;
+    gap: 24px;
+}
+
+.password-one, .password-two {
+    /* layout */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 211px;
+    height: 39px;
+    flex-shrink: 0;
+    
+    /* style */
+    border-radius: 6px;
+    background: #273549;
+    
+    /* typography */
+    color: #5DEF92;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 200% */
+}
